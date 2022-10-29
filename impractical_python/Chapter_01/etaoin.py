@@ -4,7 +4,7 @@ from collections import defaultdict
 from typing import DefaultDict
 
 
-def etaoin(text: str) -> DefaultDict[str, list]:
+def etaoin(text: str) -> DefaultDict[str, list[str]]:
     mapping = defaultdict(list)
     for char in text:
         char = char.lower()
