@@ -21,7 +21,9 @@ def test_piglatin(test_input, expected):
     assert piglatinize(test_input) == expected
 
 
-@pytest.mark.skip(reason="test not implemented")
 def test_etaoin():
     from collections import defaultdict
-    assert isinstance(etaoin("Sample text"), defaultdict)
+    d = etaoin("Sample text: A Quick Brown Fox")
+    assert isinstance(d, defaultdict)
+    assert len(d['a']) == 2
+    assert len(d['z']) == 0
