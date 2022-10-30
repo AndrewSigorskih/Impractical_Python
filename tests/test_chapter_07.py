@@ -1,8 +1,6 @@
 import pytest
 from impractical_python.Chapter_07.super_rats import \
         populate, fitness, select, breed, mutate
-from impractical_python.Chapter_07.safe_cracker import \
-        fitness as cracker_fitness
 
 
 def test_populate():
